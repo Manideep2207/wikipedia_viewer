@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css');
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #092B40;
+}
+.App {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+.page-container {
+  padding-bottom: 30px;
+}
+#same-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header {
+  padding-top: 10px;
+}
+#RandomWikiclass {
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Marck Script';
+}
+.RandomWiki {
+  text-decoration: none;
+  background: white;
+color: black;
+border-radius: 20px;
+width: 50px;
+padding: 5px;
+font-size: 25px;
+}
+.SearchBar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400px;
+  margin-right: 20px;
+}
+.SearchInputText {
+  height: 30px;
+width: 300px;
+font-size: 20px;
+margin-top: 20px;
+padding-left: 30px;
+border-radius: 20px;
+}
+.search-icon {
+  position: relative;
+  left: 25px;
+}
+.reset {
+  position: relative;
+right: 25px;
+cursor: pointer;
+}
+.button {
+  height: 50px;
+width: 200px;
+font-size: 25px;
+margin-top: 20px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+font-family: Oswald, sans-serif;
+}
+.result-list {
+  width: 70%;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 13%;
+  text-decoration: none;
+  height: 100px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+.result-button {
+  text-decoration: none;
+}
+.result-list .result-button h2{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+.result-list .result-button p{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.error-message {
+  color: hsl(349, 96%, 26%);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+}
+footer a{
+  color: white;
+  font-family: 'Marck Script';
+}
+
+@media (max-width: 730px) {
+  .App {
+  text-align: center;
+  position: relative;
+  min-height: 100%;
+}
+.page-container {
+  padding-bottom: 10px;
+}
+#same-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header {
+  padding-top: 10px;
+}
+#RandomWikiclass {
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Marck Script';
+}
+.RandomWiki {
+  text-decoration: none;
+  background: white;
+color: black;
+border-radius: 20px;
+width: 50px;
+padding: 5px;
+font-size: 15px;
+}
+.SearchBar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400px;
+  margin-right: 20px;
+}
+.SearchInputText {
+  height: 30px;
+width: 200px;
+font-size: 20px;
+margin-top: 20px;
+padding-left: 30px;
+border-radius: 20px;
+}
+.search-icon {
+  position: relative;
+  left: 25px;
+}
+.reset {
+  position: relative;
+right: 25px;
+cursor: pointer;
+}
+.wikiresults {
+  margin-bottom: 25px;
+}
+.button {
+  height: 30px;
+width: 100px;
+font-size: 16px;
+margin-top: 20px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+font-family: Oswald, sans-serif;
+}
+.spinner {
+  margin: 3%;
+}
+.result-list {
+  width: 70%;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 13%;
+  text-decoration: none;
+  height: auto;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+.result-button {
+  text-decoration: none;
+}
+.result-list .result-button h2{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+.result-list .result-button p{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.error-message {
+  color: hsl(349, 96%, 26%);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  font-size: 20px;
+}
+footer a{
+  color: white;
+  font-family: 'Marck Script';
+}
+}
+@media (max-height: 420px) {
+  .App {
+  text-align: center;
+  position: relative;
+  min-height: 100%;
+}
+.page-container {
+  padding-bottom: 10px;
+}
+#same-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+header {
+  padding-top: 10px;
+}
+#RandomWikiclass {
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Marck Script';
+}
+.RandomWiki {
+  text-decoration: none;
+  background: white;
+color: black;
+border-radius: 20px;
+width: 50px;
+padding: 5px;
+font-size: 15px;
+}
+.SearchBar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400px;
+  margin-right: 20px;
+}
+.SearchInputText {
+  height: 30px;
+width: 200px;
+font-size: 20px;
+margin-top: 20px;
+padding-left: 30px;
+border-radius: 20px;
+}
+.search-icon {
+  position: relative;
+  left: 25px;
+}
+.reset {
+  position: relative;
+right: 25px;
+cursor: pointer;
+}
+.wikiresults {
+  margin-bottom: 25px;
+}
+.button {
+  height: 30px;
+width: 100px;
+font-size: 16px;
+margin-top: 20px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+font-family: Oswald, sans-serif;
+}
+.spinner {
+  margin: 3%;
+}
+.result-list {
+  width: 70%;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 13%;
+  text-decoration: none;
+  height: auto;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+.result-button {
+  text-decoration: none;
+}
+.result-list .result-button h2{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+.result-list .result-button p{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+.error-message {
+  color: hsl(349, 96%, 26%);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  font-size: 20px;
+}
+footer a{
+  color: white;
+  font-family: 'Marck Script';
+}
+}
